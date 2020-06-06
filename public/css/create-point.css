@@ -1,0 +1,153 @@
+#page-create-point {
+    margin: 0 auto;
+    max-width: 1100px;
+    width: 90%;
+}
+
+#page-create-point header {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 48px;
+}
+
+#page-create-point header a {
+    align-items: center;
+    color: var(--title-color);
+    display: flex;
+    font-weight: bold;
+}
+
+#page-create-point header a span {
+    background-image: url("../assets/arrow-left.svg");
+    display: flex;
+    height: 24px;
+    margin-right: 16px;
+    width: 20px;
+}
+
+form {
+    background-color: white;
+    border-radius: 8px;
+    margin: 80px auto; 
+    padding: 64px;
+    max-width: 730px;
+}
+
+form h1 {
+    font-size: 36px;
+}
+
+form fieldset {
+    border: 0;
+    margin-top: 64px;
+}
+
+form legend {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    width: 100%;
+}
+
+form legend h2 {
+    font-size: 24px;
+}
+
+form legend span {
+    color: var(--title-color);
+    font-size: 14px;
+}
+
+form .field {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    margin-bottom: 24px;
+}
+
+form .field-group {
+    display: flex;
+
+}
+
+form input, form select {
+    background-color: #f0f0f5;
+    border: 0;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+    padding: 16px 24px;   
+}
+
+form select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+form label {
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+form .field-group .field + .field {
+    margin-left: 24px;
+}
+
+form button {
+    background-color: var(--primary-color);
+    border: 0;
+    border-radius: 8px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    height: 56px;
+    margin-top: 40px;
+    transition: background-color 400ms;
+    width: 260px;
+}
+
+form button:hover {
+    background-color: #2fb86e;
+}
+
+.items-grid {
+    display: grid;
+    gap:16px;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.items-grid li {
+    align-items: center;
+    background-color: #f5f5f5;
+    border: 2px solid #f5f5f5;
+    border-radius: 8px; 
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    height: 180px;
+    justify-content: space-between;
+    list-style: none;
+    padding: 32px 24px 16px;
+    text-align: center;
+}
+
+.items-grid li span {
+    align-items: center;
+    color: var(--title-color);
+    display: flex;
+    flex: 1;
+    margin-top: 12px;
+}  
+
+.items-grid li.selected {
+    background: #e1faec;
+    border: 2px solid #34cb79; 
+}
+
+.items-grid li img,
+.items-grid li span {
+    pointer-events: none;
+}
