@@ -6,6 +6,7 @@
     <!-- CSS -->
     <link rel="stylesheet" href="./css/home.css">
     <link rel="stylesheet" href="./css/modal.css">
+    <link rel="stylesheet" href="./css/error.css">
 {% endblock styles %}
 
 {% block content %}
@@ -31,6 +32,12 @@
 {% block modal %}
     {% include "partials/modal.html" %}
 {% endblock modal %}
+
+{% block error %}
+    {% if error %}
+        {% include "partials/error.html" %}
+    {% endif %}    
+{% endblock error %}
 
 {% block scripts %}
     <script src="./js/index.js"></script>

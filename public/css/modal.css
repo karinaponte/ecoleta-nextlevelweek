@@ -73,6 +73,36 @@
     background-color: #2fb86e;
 }
 
+/* Referente ao modal point created */
+#modal.point .content {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+#modal.point h1 {
+    color: white;
+    margin-top: 32px;
+}
+
+/* Referente ao modal error */
+#modal.error .content {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+#modal.error .content img {
+    height: 5em;
+    width: 5em;
+}
+
+#modal.error h1 {
+    color: white;
+    text-align: center;
+    margin-top: 32px;
+}
+
 
 
 
