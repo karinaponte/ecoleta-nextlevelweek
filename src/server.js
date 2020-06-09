@@ -47,9 +47,8 @@ server.post("/savepoint", (req, res) => {
         state,
         city,
         items
-    ) VALUES (?,?,?,?,?,?,?);
+    ) VALUES (?, ?, ?, ?, ?, ?, ?);
     `
-
     const values = [
         req.body.image,
         req.body.name,

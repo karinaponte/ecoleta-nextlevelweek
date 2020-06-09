@@ -51,7 +51,7 @@ for (const item of itemsToCollect) {
     item.addEventListener("click", handleSelectedItem);
 }
 
-const collectedItems = document.querySelector("input[name=items");
+const collectedItems = document.querySelector("input[name=items]");
 
 let selectedItems = [];
 
@@ -85,7 +85,7 @@ function handleSelectedItem(event) {
     }   
     
     // atualizar o campo escondido com os itens selecionados
-    collectedItems.value = selectedItems;
+    collectedItems.value = selectedItems.join(", ");
 
 }
 
