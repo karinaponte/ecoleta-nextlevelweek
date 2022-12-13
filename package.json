@@ -5,7 +5,7 @@
   },
   "author": "Karina Ponte",
   "dependencies": {
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "nunjucks": "^3.2.1",
     "python": "0.0.4",
     "sqlite3": "https://github.com/mapbox/node-sqlite3/tarball/master"
